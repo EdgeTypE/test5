@@ -66,6 +66,18 @@ export const translations = {
       placeholder: 'Enter encrypted text to decrypt',
       resultPlaceholder: 'Decrypted output will appear here',
       error: 'Decryption error: Invalid input'
+    },
+    security: {
+      title: 'Why One-Time Pad is Unbreakable',
+      subtitle: 'The Most Secure Encryption in the Universe',
+      facts: [
+        'Even with all computers on Earth working together, it would take longer than the age of the universe (13.8 billion years) to try all possible keys.',
+        'There are about 10⁸⁰ atoms in the observable universe. For a 256-character message, there are 256⁸ possible keys - vastly more than the number of atoms!',
+        'According to quantum mechanics and information theory, one-time pad is the only mathematically proven unbreakable encryption method.',
+        'Each possible decryption is equally likely, making it impossible to know which one is correct without the exact key.',
+        'Even if you had a computer made from all matter in the universe, running at the maximum speed physics allows, you still couldn\'t break it.'
+      ],
+      conclusion: 'This is why intelligence agencies and governments have historically used one-time pads for their most sensitive communications.'
     }
   },
   tr: {
@@ -131,6 +143,18 @@ export const translations = {
       placeholder: 'Çözülecek şifreli metni girin',
       resultPlaceholder: 'Çözülmüş metin burada görünecek',
       error: 'Şifre çözme hatası: Geçersiz girdi'
+    },
+    security: {
+      title: 'One-Time Pad Neden Kırılamaz',
+      subtitle: 'Evrendeki En Güvenli Şifreleme',
+      facts: [
+        'Dünyadaki tüm bilgisayarlar birlikte çalışsa bile, tüm olası anahtarları denemek evrenin yaşından (13.8 milyar yıl) daha uzun sürerdi.',
+        'Gözlemlenebilir evrende yaklaşık 10⁸⁰ atom var. 256 karakterlik bir mesaj için 256⁸ olası anahtar var - bu, atom sayısından çok daha fazla!',
+        'Kuantum mekaniği ve bilgi teorisine göre, one-time pad matematiksel olarak kanıtlanmış tek kırılamaz şifreleme yöntemidir.',
+        'Her olası çözüm eşit derecede olasıdır, bu da doğru anahtara sahip olmadan hangi çözümün doğru olduğunu bilmeyi imkansız kılar.',
+        'Evrendeki tüm maddelerden yapılmış, fiziğin izin verdiği maksimum hızda çalışan bir bilgisayarınız olsa bile kıramazsınız.'
+      ],
+      conclusion: 'Bu nedenle istihbarat teşkilatları ve hükümetler tarih boyunca en hassas iletişimleri için one-time pad kullanmışlardır.'
     }
   }
 };

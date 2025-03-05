@@ -321,6 +321,31 @@
         <span>{t.footer.usage.text2}</span>
       </div>
     </div>
+
+    <div class="mt-8 bg-base-100 p-6 rounded-box shadow-lg">
+      <h2 class="text-2xl font-bold mb-4">{t.security.title}</h2>
+      <h3 class="text-xl mb-6 text-primary">{t.security.subtitle}</h3>
+      
+      <div class="space-y-6">
+        {#each t.security.facts as fact}
+          <div class="flex items-start gap-4">
+            <div class="mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="flex-1">{fact}</p>
+          </div>
+        {/each}
+        
+        <div class="alert alert-info mt-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p>{t.security.conclusion}</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer p-10 bg-base-200 text-base-content mt-10">
